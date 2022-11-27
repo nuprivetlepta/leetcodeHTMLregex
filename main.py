@@ -19,7 +19,7 @@ class Solution(object):
         di = {'&quot;': '\"', '&apos;': '\'', '&amp;': '&', '&gt;': '>', '&lt;': '<', '&frasl;': '/'}
 
         for key, value in di.items():
-            re.sub(key, value, text)
+            text = re.sub(key, value, text)
 
         return text
 
